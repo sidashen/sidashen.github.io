@@ -119,11 +119,11 @@ button {
   right: 144px;
 }
         
-.searchArea button:before {
-  content: "\f002";
-  font-family: FontAwesome;
-  font-size: 16px;
-  color: white;
+.searchIcon > a {
+  text-decoration: none;
+  position: fixed;
+  top: 31.5px;
+  right: 84px;  
 }
         
 .searchArea input:focus {
