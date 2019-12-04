@@ -8,7 +8,7 @@ body {
 .header {
   background: url('./images/starfield-banner.jpg ');
   position: fixed;
-  width: 95%;
+  width: 100%;
   margin: 0 0 10px 0;
   z-index: 2;
 }
@@ -31,6 +31,7 @@ a {
   text-decoration: none;
   color:  white;
 }
+
 a:hover {
   text-decoration: none;
   color: #5e96a7;
@@ -153,7 +154,7 @@ button {
   height: 550px;
 }
 
-.dawnBlock, .climateBlock {
+.dawnBlock, .climateBlock, .mergerBlock, .asteBlock {
   box-sizing: border-box;
   background-color: #546c9a;
   opacity: 0.85;
@@ -170,7 +171,7 @@ button {
   width: 60px;
 }
 
-.dawnWhite, .climateWhite, .launchWhite {
+.dawnWhite, .climateWhite, .launchWhite, .mergerWhite, .asteWhite {
   box-sizing: border-box;
   background-color: white;
   opacity: 0.85;
@@ -180,11 +181,11 @@ button {
   font-size: 15px;
 }
 
-.dawnWhite, .launchWhite {
+.dawnWhite, .launchWhite, .asteWhite {
   bottom: 0;
   height: 30px;
   padding: 0 0 0 8px;
-  width: 595.4px;
+  width: 49.4%;
 }
 
 .des {
@@ -208,14 +209,14 @@ button {
 .climateBlock {
   position: absolute;
   top: 211px;
-  width: 70px;
+  width: 75px;
 }
 
 .climateWhite {
   box-sizing: border-box;
   bottom: 259px;
   height: 50px;
-  width: 290.76px;
+  width: 24.15%;
   padding: 0 8px;
 }
 
@@ -284,13 +285,47 @@ p {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
-  margin:0 40px;
+  margin:0 30px;
 }
 
-.Merger {
-  background: url(./images/ssc2017-14a1.jpg) no-repeat;
-  background-size: 100%;
-  width: 245px;
-  height: 245px;
+.merger {
+  margin-top: 13px;
+  background: url(./images/ssc2017-14a1.jpg) no-repeat -146px 0;
+  background-size: cover;
+  width: 24.6%;
+  height: 290.1px;
+}
+
+.mergerBlock {
+  position: absolute;
+  top: 243px;
+  width: 149px;
+}
+
+.mergerWhite {
+  bottom: 0;
+  height: 30px;
+  padding: 0 0 0 8px;
+  width: 24.6%;
+}
+
+.asteroids {
+  margin-top: 13px;
+  background: url(./images/pia22556-16.gif) no-repeat;
+  background-size: contain;
+  width: 49.4%;
+  height: 290.1px;
+}
+
+.asteBlock {
+  position: absolute;
+  top: 243px;
+  width: 120px;
+}
+
+.demo {
+  margin-top: 13px;
+  width: 24.6%;
+  height: 290.1px;
 }
 
