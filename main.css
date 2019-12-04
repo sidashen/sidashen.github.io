@@ -137,7 +137,7 @@ button {
   right: 54px;
 }
 
-.firstPart {
+.firstPart, .centerPart, .lastPart, .bottomBar {
   position: relative;
   top: 131px;
   display: flex;
@@ -234,7 +234,7 @@ button {
   font-weight: lighter;
 }
 
-p {
+.eventContent > p {
   line-height: 18px;
   margin: 0;
   padding: 6px 0 0 0;
@@ -279,15 +279,6 @@ p {
   margin: 14.5px 0 0 0;
 }
 
-.centerPart {
-  position: relative;
-  top: 131px;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-  margin:0 30px;
-}
-
 .merger {
   margin-top: 13px;
   background: url(./images/ssc2017-14a1.jpg) no-repeat -146px 0;
@@ -329,12 +320,15 @@ p {
   height: 290.1px;
 }
 
-.lastPart {
+.lastPart, .bottomBar {
   position: relative;
   top: 131px;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
+}
+
+.lastPart {
   margin: 13px 30px 0;
 }
 
@@ -344,7 +338,7 @@ p {
 }
 
 .logoImage {
-  background: url(./images/nasa_logo.png) no-repeat;
+  background: url(./images/nasa_logo.png) no-repeat -12px -13px;
   width: 24.6%;
   height: 290.59px;
 }
@@ -424,3 +418,66 @@ p {
   top: -24px;
   left: 265px;
 }
+
+.bottomBar {
+  margin: 28px 20px 0;
+  background-color: #003d92;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 35px;
+  font-size: 15px;
+}
+
+.upFooter {
+  position: relative;
+  top: 155px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+.footerLogo {
+  background: url(./images/nasa_logo.png) no-repeat;
+  background-size: 90%;
+  float: left;
+  margin: 13px 30px 0;
+  width: 5%;
+  height: 59px;
+}
+
+.upFooter > p {
+  display: inline-block;
+  color: white;
+  position: relative;
+  top: -2px;
+  right: 883px;
+  width: 22%;
+  height: 80px;
+  font-size: 12px;
+}
+
+.downFooter {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  top: 115px;
+  left: 439px;
+  width: 63%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+.moreInfo {
+  font-size: 11px;
+  line-height: 20px;
+}
+
+.moreInfo > a {
+  color:#3c5272;
+}
+
+.moreInfo > a:hover {
+  text-decoration: none;
+  color: #5e96a7;
