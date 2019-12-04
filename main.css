@@ -142,7 +142,7 @@ button {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
-  margin:0 40px;
+  margin:0 30px;
 }
 
 .dawn {
@@ -150,7 +150,7 @@ button {
   background-repeat: no-repeat;
   background-size: cover;
   width: 49.4%;
-  height: 500px;
+  height: 550px;
 }
 
 .dawnBlock, .climateBlock {
@@ -184,7 +184,7 @@ button {
   bottom: 0;
   height: 30px;
   padding: 0 0 0 8px;
-  width: 584.4px;
+  width: 595.4px;
 }
 
 .des {
@@ -199,24 +199,23 @@ button {
 }
 
 .climate {
-  background: url(./images/mollweide_cycle.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: url(./images/mollweide_cycle.jpg) no-repeat 0 -6px;
+  background-size: 105%;
   width: 48.8%;
-  height: 245px;
+  height: 290.59px;
 }
 
 .climateBlock {
   position: absolute;
-  top: 156px;
+  top: 211px;
   width: 70px;
 }
 
 .climateWhite {
   box-sizing: border-box;
-  bottom: 255px;
-  height: 60px;
-  width: 285.76px;
+  bottom: 259px;
+  height: 50px;
+  width: 290.76px;
   padding: 0 8px;
 }
 
@@ -226,7 +225,7 @@ button {
   margin: 0;
   padding: 0;
   width: 49%;
-  height: 245px;
+  height: 291px;
   z-index: 1;
   list-style: none;
   color: white;
@@ -254,7 +253,7 @@ p {
   display: inline-block;
   width: 36%;
   position: relative;
-  top: 84px;
+  top: 129px;
   margin: 7px 0 0 7px;
   padding: 0 0 0 8px;
   border-top: 0.5px solid white;
@@ -263,7 +262,7 @@ p {
 .eventFooterRight {
   display: inline-block;
   position: relative;
-  top: 84px;
+  top: 129px;
   right: 5px;
   margin: 7px 7px 0 0;
   padding: 0 8px 0 21px;
@@ -275,8 +274,23 @@ p {
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  height: 240px;
+  height: 244px;
   margin: 14.5px 0 0 0;
 }
 
+.centerPart {
+  position: relative;
+  top: 131px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  margin:0 40px;
+}
+
+.Merger {
+  background: url(./images/ssc2017-14a1.jpg) no-repeat;
+  background-size: 100%;
+  width: 245px;
+  height: 245px;
+}
 
