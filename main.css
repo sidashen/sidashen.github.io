@@ -133,7 +133,7 @@ button {
 .share > a {
   text-decoration: none;
   position: fixed;
-  top: 34px;
+  top: 31.5px;
   right: 54px;
 }
 
@@ -320,7 +320,7 @@ p {
 .asteBlock {
   position: absolute;
   top: 243px;
-  width: 120px;
+  width: 91px;
 }
 
 .demo {
@@ -329,3 +329,98 @@ p {
   height: 290.1px;
 }
 
+.lastPart {
+  position: relative;
+  top: 131px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  margin: 13px 30px 0;
+}
+
+.juno, .cassini, .telescope {
+  width: 24.2%;
+  height: 290.59px;
+}
+
+.logoImage {
+  background: url(./images/nasa_logo.png) no-repeat;
+  width: 24.6%;
+  height: 290.59px;
+}
+
+.juno {
+  background: url(./images/io-home.gif) no-repeat;
+}
+
+.cassini {
+  background: url(./images/cassini20170809.jpg) no-repeat;
+}
+
+.telescope {
+  background: url(./images/fermiicecube_as.jpg) no-repeat;
+}
+
+.logoBlock, .junoBlock, .cassiniBlock, .telescopeBlock {
+  box-sizing: border-box;
+  background-color: #546c9a;
+  opacity: 0.85;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+}
+
+.logoBlock, .junoBlock, .cassiniBlock {
+  position: relative;
+  top: 211px;
+}
+
+.logoBlock {
+  width: 116px;  
+}
+
+.junoBlock {
+  width: 57px;   
+}
+
+.cassiniBlock {
+  width: 74px; 
+}
+
+.logoWhite, .junoWhite, .cassiniWhite, .telescopeWhite {
+  box-sizing: border-box;
+  background-color: white;
+  opacity: 0.85;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+}
+
+.logoWhite, .junoWhite, .cassiniWhite {
+  bottom: 0;
+  height: 50px;
+  padding: 0 8px;
+}
+
+.logoWhite {
+  width: 24.6%;
+}
+
+.junoWhite, .cassiniWhite, .telescopeWhite {
+  width: 24.2%;
+}
+
+.telescopeWhite {
+  bottom: 0;
+  height: 70px;
+  padding: 0 8px;
+}
+
+.camera {
+  position: relative;
+  top: -24px;
+  left: 265px;
+}
