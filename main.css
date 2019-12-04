@@ -146,6 +146,10 @@ button {
   margin:0 30px;
 }
 
+.centerPart {
+  font-weight: bolder;
+}
+
 .dawn {
   background: url(./images/pia21924-16.jpg);
   background-repeat: no-repeat;
@@ -381,6 +385,12 @@ button {
 
 .cassiniBlock {
   width: 74px; 
+}
+
+.telescopeBlock {
+  position: relative;
+  top: 190.5px;
+  width: 197px;
 }
 
 .logoWhite, .junoWhite, .cassiniWhite, .telescopeWhite {
