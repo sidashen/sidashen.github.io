@@ -1,0 +1,282 @@
+body {
+  background-color: black;
+  margin: 0;
+  padding: 0;
+  z-index: -1;
+}
+
+.header {
+  background: url('./images/starfield-banner.jpg ');
+  position: fixed;
+  width: 95%;
+  margin: 0 0 10px 0;
+  z-index: 2;
+}
+
+.logo {
+  background-image: url(./images/nasa_logo.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  float: left;
+  width: 75px;
+  height: 75px;
+  margin: 30px 0 0 60px;
+}
+
+.banner {
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color:  white;
+}
+a:hover {
+  text-decoration: none;
+  color: #5e96a7;
+}
+
+.upBanner {
+  font-size: 16px;
+  top: 0;
+  right: 15.5%;
+  margin: 24px 0 0 275px;
+}
+
+.downBanner {
+  display: inline-block;
+  margin: 28px 0 0 80px;
+  font-size: 12px;
+  background-color: #434343;
+  padding: 7px;
+  line-height: 6px;
+  width: 67%;
+}
+
+.banner li {
+  display: inline-block;
+  list-style: none;
+  padding: 6.5px;
+}
+
+.withLine {
+  border-right: 2px solid #434343;
+}
+
+.shortLine {
+  border-right: 1px solid #818181;
+}
+
+.noLine {
+  border: none;
+}
+
+form {
+  position: relative;
+  width: 300px;
+  margin: 0 auto;
+}
+
+input, button {
+  border: none;
+  outline: none;
+}
+
+input {
+  width: 51%;
+  height: 36px;
+}
+
+button {
+  height: 36px;
+  width: 36px;
+  cursor: pointer;
+  position: absolute;
+}
+
+.searchArea {
+  display: inline-block;
+  background: #434343;
+  position: fixed;
+  top: 24px;
+  right: 80px;
+  width: 12%;
+}
+        
+.searchArea input, .searchArea button {
+  background: transparent;
+}
+        
+.searchArea input {
+  box-sizing: border-box;
+  padding: 0 0 0 4px;
+  border: 2px solid #434343;
+}
+      
+.searchArea button {
+  top: 0;
+  right: 144px;
+}
+        
+.searchArea button:before {
+  content: "\f002";
+  font-family: FontAwesome;
+  font-size: 16px;
+  color: white;
+}
+        
+.searchArea input:focus {
+  border-color: #5e96a7;
+}
+
+.share > a {
+  text-decoration: none;
+  position: fixed;
+  top: 34px;
+  right: 54px;
+}
+
+.firstPart {
+  position: relative;
+  top: 131px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  margin:0 40px;
+}
+
+.dawn {
+  background: url(./images/pia21924-16.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 49.4%;
+  height: 500px;
+}
+
+.dawnBlock, .climateBlock {
+  box-sizing: border-box;
+  background-color: #546c9a;
+  opacity: 0.85;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+}
+
+.dawnBlock {
+  position: absolute;
+  bottom: 30px;
+  width: 60px;
+}
+
+.dawnWhite, .climateWhite, .launchWhite {
+  box-sizing: border-box;
+  background-color: white;
+  opacity: 0.85;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+}
+
+.dawnWhite, .launchWhite {
+  bottom: 0;
+  height: 30px;
+  padding: 0 0 0 8px;
+  width: 584.4px;
+}
+
+.des {
+  width: 49.5%;
+  height: 500px;
+}
+
+.details {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+.climate {
+  background: url(./images/mollweide_cycle.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 48.8%;
+  height: 245px;
+}
+
+.climateBlock {
+  position: absolute;
+  top: 156px;
+  width: 70px;
+}
+
+.climateWhite {
+  box-sizing: border-box;
+  bottom: 255px;
+  height: 60px;
+  width: 285.76px;
+  padding: 0 8px;
+}
+
+.event {
+  box-sizing: border-box;
+  background-color:#45709a;
+  margin: 0;
+  padding: 0;
+  width: 49%;
+  height: 245px;
+  z-index: 1;
+  list-style: none;
+  color: white;
+  font-size: 12px;
+  font-weight: lighter;
+}
+
+p {
+  line-height: 18px;
+  margin: 0;
+  padding: 6px 0 0 0;
+}
+
+.eventTitle {
+  padding: 0 0 6px 0;
+  margin: 15px 15px 0 15px;
+  border-bottom: 0.5px solid white ;
+}
+
+.eventContent {
+  margin: 0 7px 0;
+}
+
+.eventFooterLeft {
+  display: inline-block;
+  width: 36%;
+  position: relative;
+  top: 84px;
+  margin: 7px 0 0 7px;
+  padding: 0 0 0 8px;
+  border-top: 0.5px solid white;
+}
+
+.eventFooterRight {
+  display: inline-block;
+  position: relative;
+  top: 84px;
+  right: 5px;
+  margin: 7px 7px 0 0;
+  padding: 0 8px 0 21px;
+  border-top: 0.5px solid white;
+}
+
+.launch {
+  background: url(./images/s69-39961.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 240px;
+  margin: 14.5px 0 0 0;
+}
+
+
