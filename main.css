@@ -23,7 +23,7 @@ body {
   margin: 30px 0 0 60px;
 }
 
-.banner {
+.nav {
   color: white;
 }
 
@@ -37,38 +37,38 @@ a:hover {
   color: #5e96a7;
 }
 
-.upBanner {
+.up-nav {
   font-size: 16px;
   top: 0;
   right: 15.5%;
   margin: 24px 0 0 275px;
 }
 
-.downBanner {
+.down-nav {
   display: inline-block;
   margin: 28px 0 0 80px;
   font-size: 12px;
   background-color: #434343;
   padding: 7px;
   line-height: 6px;
-  width: 67%;
+  width: 63%;
 }
 
-.banner li {
+.nav li {
   display: inline-block;
   list-style: none;
   padding: 6.5px;
 }
 
-.withLine {
+.subnav-line {
   border-right: 2px solid #434343;
 }
 
-.shortLine {
+.down-subnav-line {
   border-right: 1px solid #818181;
 }
 
-.noLine {
+.up-subnav-no-line {
   border: none;
 }
 
