@@ -95,7 +95,7 @@ button {
   position: absolute;
 }
 
-.searchArea {
+.search-area {
   display: inline-block;
   background: #434343;
   position: fixed;
@@ -104,29 +104,29 @@ button {
   width: 12%;
 }
         
-.searchArea input, .searchArea button {
+.search-area input, .search-area button {
   background: transparent;
 }
         
-.searchArea input {
+.search-area input {
   box-sizing: border-box;
   padding: 0 0 0 4px;
   border: 2px solid #434343;
 }
       
-.searchArea button {
+.search-area button {
   top: 0;
   right: 144px;
 }
         
-.searchIcon > a {
+.search-icon > a {
   text-decoration: none;
   position: fixed;
   top: 31.5px;
   right: 84px;  
 }
         
-.searchArea input:focus {
+.search-area input:focus {
   border-color: #5e96a7;
 }
 
