@@ -304,6 +304,12 @@ button {
   width: 24.6%;
 }
 
+.merger-camera {
+  position: relative;
+  top: 10px;
+  left: 265px;
+}
+
 .asteroids {
   margin-top: 13px;
   background: url(./images/pia22556-16.gif) no-repeat;
