@@ -10,6 +10,7 @@ body {
   position: fixed;
   width: 100%;
   margin: 0 0 10px 0;
+  padding: 0 0 14px 0;
   z-index: 2;
 }
 
@@ -29,7 +30,7 @@ body {
 
 a {
   text-decoration: none;
-  color:  white;
+  color: white;
 }
 
 a:hover {
@@ -39,28 +40,27 @@ a:hover {
 
 .up-nav {
   font-size: 16px;
-  top: 0;
-  right: 15.5%;
-  margin: 24px 0 0 275px;
+  margin: 28px 0 0 275px;
 }
 
 .down-nav {
   display: inline-block;
-  margin: 28px 0 0 80px;
+  margin: 28px 0 0 119px;
   font-size: 12px;
   background-color: #434343;
   padding: 7px;
   line-height: 6px;
-  width: 63%;
+  width: 60%;
 }
 
 .nav li {
   display: inline-block;
   list-style: none;
+  margin: -2px;
   padding: 6.5px;
 }
 
-.subnav-line {
+.up-subnav-line {
   border-right: 2px solid #434343;
 }
 
@@ -68,7 +68,7 @@ a:hover {
   border-right: 1px solid #818181;
 }
 
-.up-subnav-no-line {
+.subnav-no-line {
   border: none;
 }
 
@@ -103,50 +103,50 @@ button {
   right: 80px;
   width: 12%;
 }
-        
+
 .search-area input, .search-area button {
   background: transparent;
 }
-        
+
 .search-area input {
   box-sizing: border-box;
   padding: 0 0 0 4px;
   border: 2px solid #434343;
 }
-      
+
 .search-area button {
   top: 0;
   right: 144px;
 }
-        
-.search-icon > a {
+
+.search-icon>a {
   text-decoration: none;
   position: fixed;
   top: 31.5px;
-  right: 84px;  
+  right: 84px;
 }
-        
+
 .search-area input:focus {
   border-color: #5e96a7;
 }
 
-.share > a {
+.share>a {
   text-decoration: none;
   position: fixed;
   top: 31.5px;
   right: 54px;
 }
 
-.firstPart, .centerPart, .lastPart, .bottomBar {
+.main-news, .main-stars, .main-nasa, .bottom-bar {
   position: relative;
-  top: 131px;
+  top: 129px;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
-  margin:0 30px;
+  margin: 0 30px;
 }
 
-.centerPart {
+.main-stars {
   font-weight: bolder;
 }
 
@@ -158,7 +158,7 @@ button {
   height: 550px;
 }
 
-.dawnBlock, .climateBlock, .mergerBlock, .asteBlock {
+.dawn-title, .climate-title, .merger-title, .asteroids-title {
   box-sizing: border-box;
   background-color: #546c9a;
   opacity: 0.85;
@@ -169,13 +169,13 @@ button {
   height: 30px;
 }
 
-.dawnBlock {
+.dawn-title {
   position: absolute;
   bottom: 30px;
   width: 60px;
 }
 
-.dawnWhite, .climateWhite, .launchWhite, .mergerWhite, .asteWhite {
+.dawn-intro, .climate-intro, .launch-intro, .merger-intro, .asteWhite {
   box-sizing: border-box;
   background-color: white;
   opacity: 0.85;
@@ -185,14 +185,14 @@ button {
   font-size: 15px;
 }
 
-.dawnWhite, .launchWhite, .asteWhite {
+.dawn-intro, .launch-intro, .asteWhite {
   bottom: 0;
   height: 30px;
   padding: 0 0 0 8px;
   width: 49.4%;
 }
 
-.des {
+.description {
   width: 49.5%;
   height: 500px;
 }
@@ -210,13 +210,13 @@ button {
   height: 290.59px;
 }
 
-.climateBlock {
+.climate-title {
   position: absolute;
   top: 211px;
   width: 75px;
 }
 
-.climateWhite {
+.climate-intro {
   box-sizing: border-box;
   bottom: 259px;
   height: 50px;
@@ -226,7 +226,7 @@ button {
 
 .event {
   box-sizing: border-box;
-  background-color:#45709a;
+  background-color: #45709a;
   margin: 0;
   padding: 0;
   width: 49%;
@@ -238,23 +238,23 @@ button {
   font-weight: lighter;
 }
 
-.eventContent > p {
+.event-content > p {
   line-height: 18px;
   margin: 0;
   padding: 6px 0 0 0;
 }
 
-.eventTitle {
+.event-title {
   padding: 0 0 6px 0;
   margin: 15px 15px 0 15px;
-  border-bottom: 0.5px solid white ;
+  border-bottom: 0.5px solid white;
 }
 
-.eventContent {
+.event-content  {
   margin: 0 7px 0;
 }
 
-.eventFooterLeft {
+.event-footer-left {
   display: inline-block;
   width: 36%;
   position: relative;
@@ -264,7 +264,7 @@ button {
   border-top: 0.5px solid white;
 }
 
-.eventFooterRight {
+.event-footer-right {
   display: inline-block;
   position: relative;
   top: 129px;
@@ -291,13 +291,13 @@ button {
   height: 290.1px;
 }
 
-.mergerBlock {
+.merger-title {
   position: absolute;
   top: 243px;
   width: 149px;
 }
 
-.mergerWhite {
+.merger-intro {
   bottom: 0;
   height: 30px;
   padding: 0 0 0 8px;
@@ -318,7 +318,7 @@ button {
   height: 290.1px;
 }
 
-.asteBlock {
+.asteroids-title {
   position: absolute;
   top: 243px;
   width: 91px;
@@ -330,7 +330,7 @@ button {
   height: 290.1px;
 }
 
-.lastPart, .bottomBar {
+.main-nasa, .bottom-bar {
   position: relative;
   top: 131px;
   display: flex;
@@ -338,7 +338,7 @@ button {
   justify-content: space-between;
 }
 
-.lastPart {
+.main-nasa {
   margin: 13px 30px 0;
 }
 
@@ -347,7 +347,7 @@ button {
   height: 290.59px;
 }
 
-.logoImage {
+.nasa-logo {
   background: url(./images/nasa_logo.png) no-repeat -12px -13px;
   width: 24.6%;
   height: 290.59px;
@@ -365,7 +365,7 @@ button {
   background: url(./images/fermiicecube_as.jpg) no-repeat;
 }
 
-.logoBlock, .junoBlock, .cassiniBlock, .telescopeBlock {
+.nasa-title, .juno-title, .cassini-title, .telescope-title {
   box-sizing: border-box;
   background-color: #546c9a;
   opacity: 0.85;
@@ -376,30 +376,30 @@ button {
   height: 30px;
 }
 
-.logoBlock, .junoBlock, .cassiniBlock {
+.nasa-title, .juno-title, .cassini-title {
   position: relative;
   top: 211px;
 }
 
-.logoBlock {
-  width: 116px;  
+.nasa-title {
+  width: 116px;
 }
 
-.junoBlock {
-  width: 57px;   
+.juno-title {
+  width: 57px;
 }
 
-.cassiniBlock {
-  width: 74px; 
+.cassini-title {
+  width: 74px;
 }
 
-.telescopeBlock {
+.telescope-title {
   position: relative;
   top: 190.5px;
   width: 197px;
 }
 
-.logoWhite, .junoWhite, .cassiniWhite, .telescopeWhite {
+.nasa-intro, .juno-intro, .cassini-intro, .telescope-intro {
   box-sizing: border-box;
   background-color: white;
   opacity: 0.85;
@@ -409,21 +409,21 @@ button {
   font-size: 15px;
 }
 
-.logoWhite, .junoWhite, .cassiniWhite {
+.nasa-intro, .juno-intro, .cassini-intro {
   bottom: 0;
   height: 50px;
   padding: 0 8px;
 }
 
-.logoWhite {
+.nasa-intro {
   width: 24.6%;
 }
 
-.junoWhite, .cassiniWhite, .telescopeWhite {
+.juno-intro, .cassini-intro, .telescope-intro {
   width: 24.2%;
 }
 
-.telescopeWhite {
+.telescope-intro {
   bottom: 0;
   height: 70px;
   padding: 0 8px;
@@ -435,7 +435,7 @@ button {
   left: 265px;
 }
 
-.bottomBar {
+.bottom-bar {
   margin: 28px 20px 0;
   background-color: #003d92;
   display: flex;
@@ -445,7 +445,7 @@ button {
   font-size: 15px;
 }
 
-.upFooter {
+.top-footer  {
   position: relative;
   top: 155px;
   display: flex;
@@ -453,7 +453,7 @@ button {
   justify-content: space-between;
 }
 
-.footerLogo {
+.footer-nana-logo {
   background: url(./images/nasa_logo.png) no-repeat;
   background-size: 90%;
   float: left;
@@ -462,7 +462,7 @@ button {
   height: 59px;
 }
 
-.upFooter > p {
+.top-footer > p {
   display: inline-block;
   color: white;
   position: relative;
@@ -473,7 +473,7 @@ button {
   font-size: 12px;
 }
 
-.downFooter {
+.bottom-footer {
   margin: 0;
   padding: 0;
   position: relative;
@@ -485,15 +485,15 @@ button {
   justify-content: space-between;
 }
 
-.moreInfo {
+.page-statement  {
   font-size: 11px;
   line-height: 20px;
 }
 
-.moreInfo > a {
-  color:#3c5272;
+.page-statement > a {
+  color: #3c5272;
 }
 
-.moreInfo > a:hover {
+.page-statement > a:hover {
   text-decoration: none;
   color: #5e96a7;
