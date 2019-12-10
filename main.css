@@ -6,8 +6,8 @@ body {
 }
 
 .header {
-  background: url('./images/starfield-banner.jpg ');
   position: fixed;
+  background: url('./images/starfield-banner.jpg ');
   width: 100%;
   margin: 0 0 10px 0;
   padding: 0 0 14px 0;
@@ -15,10 +15,10 @@ body {
 }
 
 .logo {
+  float: left;
   background-image: url(./images/nasa_logo.png);
   background-repeat: no-repeat;
   background-size: contain;
-  float: left;
   width: 75px;
   height: 75px;
   margin: 30px 0 0 60px;
@@ -29,35 +29,35 @@ body {
 }
 
 a {
-  text-decoration: none;
   color: white;
+  text-decoration: none;
 }
 
 a:hover {
-  text-decoration: none;
   color: #5e96a7;
+  text-decoration: none;
 }
 
 .up-nav {
-  font-size: 16px;
   margin: 28px 0 0 275px;
+  font-size: 16px;
 }
 
 .down-nav {
   display: inline-block;
-  margin: 28px 0 0 119px;
-  font-size: 12px;
   background-color: #434343;
-  padding: 7px;
-  line-height: 6px;
   width: 60%;
+  margin: 28px 0 0 119px;
+  padding: 7px;
+  font-size: 12px;
+  line-height: 6px;
 }
 
 .nav li {
   display: inline-block;
-  list-style: none;
   margin: -2px;
-  padding: 6.5px;
+  padding: 6px;
+  list-style: none;
 }
 
 .up-subnav-line {
@@ -89,18 +89,18 @@ input {
 }
 
 button {
-  height: 36px;
-  width: 36px;
-  cursor: pointer;
   position: absolute;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
 }
 
 .search-area {
-  display: inline-block;
-  background: #434343;
   position: fixed;
   top: 24px;
   right: 80px;
+  display: inline-block;
+  background: #434343;
   width: 12%;
 }
 
@@ -109,8 +109,8 @@ button {
 }
 
 .search-area input {
-  box-sizing: border-box;
   padding: 0 0 0 4px;
+  box-sizing: border-box;
   border: 2px solid #434343;
 }
 
@@ -119,31 +119,30 @@ button {
   right: 144px;
 }
 
-.search-icon>a {
-  text-decoration: none;
+.search-icon > a {
   position: fixed;
-  top: 31.5px;
+  top: 31px;
   right: 84px;
+  text-decoration: none;
 }
 
 .search-area input:focus {
   border-color: #5e96a7;
 }
 
-.share>a {
-  text-decoration: none;
+.share > a {
   position: fixed;
-  top: 31.5px;
+  top: 31px;
   right: 54px;
+  text-decoration: none;
 }
 
 .main-news, .main-stars, .main-nasa, .bottom-bar {
   position: relative;
   top: 129px;
   display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
   margin: 0 30px;
+  justify-content: space-between;
 }
 
 .main-stars {
@@ -151,22 +150,21 @@ button {
 }
 
 .dawn {
-  background: url(./images/pia21924-16.jpg);
-  background-repeat: no-repeat;
+  background: url(./images/pia21924-16.jpg) no-repeat;
   background-size: cover;
-  width: 49.4%;
+  width: 49.5%;
   height: 550px;
 }
 
 .dawn-title, .climate-title, .merger-title, .asteroids-title {
   box-sizing: border-box;
   background-color: #546c9a;
+  height: 30px;
   opacity: 0.85;
   color: white;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 30px;
 }
 
 .dawn-title {
@@ -175,21 +173,21 @@ button {
   width: 60px;
 }
 
-.dawn-intro, .climate-intro, .launch-intro, .merger-intro, .asteWhite {
-  box-sizing: border-box;
-  background-color: white;
-  opacity: 0.85;
+.dawn-intro, .climate-intro, .launch-intro, .merger-intro, .asteroids-intro {
   position: absolute;
   display: flex;
+  background-color: white;
+  box-sizing: border-box;
+  opacity: 0.85;
   align-items: center;
   font-size: 15px;
 }
 
-.dawn-intro, .launch-intro, .asteWhite {
+.dawn-intro, .launch-intro, .asteroids-intro {
   bottom: 0;
   height: 30px;
+  width: 49.5%;
   padding: 0 0 0 8px;
-  width: 49.4%;
 }
 
 .description {
@@ -199,7 +197,6 @@ button {
 
 .details {
   display: flex;
-  flex-flow: row nowrap;
   justify-content: space-between;
 }
 
@@ -207,7 +204,7 @@ button {
   background: url(./images/mollweide_cycle.jpg) no-repeat 0 -6px;
   background-size: 105%;
   width: 48.8%;
-  height: 290.59px;
+  height: 291px;
 }
 
 .climate-title {
@@ -219,19 +216,19 @@ button {
 .climate-intro {
   box-sizing: border-box;
   bottom: 259px;
-  height: 50px;
-  width: 24.15%;
   padding: 0 8px;
+  width: 24.15%;
+  height: 50px;
 }
 
 .event {
   box-sizing: border-box;
   background-color: #45709a;
+  z-index: 1;
   margin: 0;
   padding: 0;
   width: 49%;
   height: 291px;
-  z-index: 1;
   list-style: none;
   color: white;
   font-size: 12px;
@@ -239,15 +236,15 @@ button {
 }
 
 .event-content > p {
-  line-height: 18px;
   margin: 0;
   padding: 6px 0 0 0;
+  line-height: 18px;
 }
 
 .event-title {
   padding: 0 0 6px 0;
   margin: 15px 15px 0 15px;
-  border-bottom: 0.5px solid white;
+  border-bottom: 1px solid white;
 }
 
 .event-content  {
@@ -261,7 +258,7 @@ button {
   top: 129px;
   margin: 7px 0 0 7px;
   padding: 0 0 0 8px;
-  border-top: 0.5px solid white;
+  border-top: 1px solid white;
 }
 
 .event-footer-right {
@@ -271,16 +268,15 @@ button {
   right: 5px;
   margin: 7px 7px 0 0;
   padding: 0 8px 0 21px;
-  border-top: 0.5px solid white;
+  border-top: 1px solid white;
 }
 
 .launch {
-  background: url(./images/s69-39961.jpg);
-  background-repeat: no-repeat;
+  background: url(./images/s69-39961.jpg) no-repeat;
   background-size: cover;
   width: 100%;
   height: 244px;
-  margin: 14.5px 0 0 0;
+  margin: 13px 0 0 0;
 }
 
 .merger {
@@ -327,7 +323,7 @@ button {
 .demo {
   margin-top: 13px;
   width: 24.6%;
-  height: 290.1px;
+  height: 290px;
 }
 
 .main-nasa, .bottom-bar {
@@ -344,13 +340,13 @@ button {
 
 .juno, .cassini, .telescope {
   width: 24.2%;
-  height: 290.59px;
+  height: 291px;
 }
 
 .nasa-logo {
   background: url(./images/nasa_logo.png) no-repeat -12px -13px;
   width: 24.6%;
-  height: 290.59px;
+  height: 291px;
 }
 
 .juno {
@@ -395,17 +391,17 @@ button {
 
 .telescope-title {
   position: relative;
-  top: 190.5px;
+  top: 191px;
   width: 197px;
 }
 
 .nasa-intro, .juno-intro, .cassini-intro, .telescope-intro {
-  box-sizing: border-box;
-  background-color: white;
-  opacity: 0.85;
   position: absolute;
   display: flex;
   align-items: center;
+  box-sizing: border-box;
+  background-color: white;
+  opacity: 0.85;
   font-size: 15px;
 }
 
@@ -436,12 +432,12 @@ button {
 }
 
 .bottom-bar {
-  margin: 28px 20px 0;
-  background-color: #003d92;
   display: flex;
   align-items: center;
   justify-content: center;
   height: 35px;
+  margin: 28px 20px 0;
+  background-color: #003d92;
   font-size: 15px;
 }
 
@@ -454,35 +450,35 @@ button {
 }
 
 .footer-nana-logo {
+  float: left;
   background: url(./images/nasa_logo.png) no-repeat;
   background-size: 90%;
-  float: left;
-  margin: 13px 30px 0;
   width: 5%;
   height: 59px;
+  margin: 13px 30px 0;
 }
 
 .top-footer > p {
   display: inline-block;
-  color: white;
   position: relative;
   top: -2px;
   right: 883px;
   width: 22%;
   height: 80px;
+  color: white;
   font-size: 12px;
 }
 
 .bottom-footer {
-  margin: 0;
-  padding: 0;
   position: relative;
   top: 115px;
   left: 439px;
-  width: 63%;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  width: 63%;
 }
 
 .page-statement  {
@@ -497,3 +493,4 @@ button {
 .page-statement > a:hover {
   text-decoration: none;
   color: #5e96a7;
+}
